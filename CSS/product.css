@@ -1,0 +1,392 @@
+/*==========================
+RESET
+==========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+    background: #f8f5f2;
+
+    color: #222;
+
+}
+
+/*==========================
+NAVBAR
+==========================*/
+
+.navbar {
+
+    background: #2d211c;
+
+    padding: 18px 0;
+
+}
+
+.navbar-brand {
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+.navbar-brand:hover {
+
+    color: #C79A63;
+
+}
+
+.nav-link {
+
+    color: white !important;
+
+    margin-left: 20px;
+
+    transition: .3s;
+
+}
+
+.nav-link:hover {
+
+    color: #C79A63 !important;
+
+}
+
+/*==========================
+PRODUCT
+==========================*/
+
+.product-section {
+
+    padding: 80px 0;
+
+}
+
+.main-image {
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+
+    transition: .4s;
+
+}
+
+.main-image:hover {
+
+    transform: scale(1.02);
+
+}
+
+.thumbs {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+.thumbs img {
+
+    width: 110px;
+
+    height: 110px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.thumbs img:hover {
+
+    transform: scale(1.08);
+
+    border: 3px solid #6F4E37;
+
+}
+
+/*==========================
+INFO
+==========================*/
+
+h1 {
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+}
+
+.rating {
+
+    margin: 15px 0;
+
+    color: #ffb400;
+
+    font-size: 20px;
+
+}
+
+.rating span {
+
+    color: #777;
+
+    font-size: 16px;
+
+    margin-left: 10px;
+
+}
+
+.price {
+
+    color: #b12704;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    margin: 20px 0;
+
+}
+
+p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+/*==========================
+OPTION
+==========================*/
+
+.option-group {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+}
+
+.option-group button {
+
+    border: none;
+
+    background: white;
+
+    padding: 12px 28px;
+
+    border-radius: 50px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+.option-group button:hover {
+
+    background: #6F4E37;
+
+    color: white;
+
+}
+
+.option-group button.active {
+
+    background: #6F4E37;
+
+    color: white;
+
+}
+
+/*==========================
+QUANTITY
+==========================*/
+
+.quantity {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.quantity button {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    background: #6F4E37;
+
+    color: white;
+
+    font-size: 22px;
+
+    border-radius: 50%;
+
+}
+
+.quantity input {
+
+    width: 70px;
+
+    text-align: center;
+
+    border: none;
+
+    background: white;
+
+    height: 45px;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+/*==========================
+BUTTON
+==========================*/
+
+.btn-buy {
+
+    width: 100%;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #6F4E37;
+
+    color: white;
+
+    font-size: 18px;
+
+    transition: .3s;
+
+}
+
+.btn-buy:hover {
+
+    background: #4E342E;
+
+    transform: translateY(-3px);
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer {
+
+    margin-top: 80px;
+
+    background: #2d211c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px) {
+
+    .main-image {
+
+        height: 420px;
+
+    }
+
+    .product-section {
+
+        padding: 40px 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .main-image {
+
+        height: 320px;
+
+    }
+
+    .thumbs {
+
+        justify-content: center;
+
+    }
+
+    .thumbs img {
+
+        width: 80px;
+
+        height: 80px;
+
+    }
+
+    h1 {
+
+        margin-top: 40px;
+
+        font-size: 36px;
+
+    }
+
+    .price {
+
+        font-size: 34px;
+
+    }
+
+    .option-group {
+
+        flex-wrap: wrap;
+
+    }
+
+}
